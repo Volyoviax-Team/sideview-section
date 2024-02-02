@@ -1,7 +1,7 @@
 # sideview-section
 
 how to commit from terminal
-- git commit -m "commit name"
+- git commit -a -m "commit name"
 - git push -u origin main
 
 how to update local repo with remote-origin
