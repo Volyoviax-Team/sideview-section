@@ -17,8 +17,12 @@ function check_scene() {
 function setup() {
     screen = createCanvas(800,450);
     screen.position(0,0);
+
+    if(screenState === "main_menu"){
+        new p5(mainMenu);
+    }
 }
 
 function draw() {
-    background("black");
+    //background("black");
 }
