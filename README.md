@@ -8,3 +8,7 @@ how to commit from terminal
 how to make a new branch
 - git checkout -b branch_name
 - git push --set-upstream origin game
+
+how to merge a branch
+- git checkout branchA_name
+- git merge branchB_name
