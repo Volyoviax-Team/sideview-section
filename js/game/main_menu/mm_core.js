@@ -40,5 +40,14 @@ var mainMenu = function(sketch){
         }else {
             credits.stroke = 'black';
         }
+
+        if(new_game.mouse.pressing()) {
+            gameSwitch("side_view");
+        } 
+
+        if(clear === true) {
+            game_clear(sketch);
+            clear = false;
+        }
     }
 };

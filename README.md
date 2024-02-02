@@ -10,7 +10,7 @@ how to update local repo with remote-origin
 
 how to make a new branch
 - git checkout -b branch_name
-- git push --set-upstream origin game
+- git push --set-upstream origin branch_name
 
 how to merge a branch
 - git checkout branchA_name
