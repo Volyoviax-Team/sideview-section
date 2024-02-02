@@ -1,6 +1,5 @@
 # sideview-section
 
 
-git commit -m "first commit"
-git branch -M main
-git push -u origin main
+- git commit -m "commit name"
+- git push -u origin main
