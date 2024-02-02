@@ -15,3 +15,6 @@ how to make a new branch
 how to merge a branch
 - git checkout branchA_name
 - git merge branchB_name
+
+how to remove branch
+- git branch -d branch_name

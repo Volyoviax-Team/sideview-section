@@ -36,6 +36,9 @@ function setup() {
     }else if(screenState === "side_view") {
         sv_setup();
         new p5(side_view);
+    }else if(screenState === "player_menu") {
+        pmSetup();
+        new p5(playerMenu);
     }
 }
 
@@ -44,6 +47,8 @@ function draw() {
 
     if(screenState === "side_view") {
         sv_draw();
+    }else if(screenState === "player_menu") {
+        pmDraw();
     }
 }
 
