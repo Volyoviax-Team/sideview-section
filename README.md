@@ -1,6 +1,7 @@
 # sideview-section
 
 how to commit from terminal
+- git add --all
 - git commit -a -m "commit name"
 - git push -u origin main
 
