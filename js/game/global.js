@@ -1,6 +1,8 @@
 //core variables (variables with data on declare)
 var screenState = sessionStorage.getItem("scene_state");
 check_scene();
+
+var clear = false;
 //game variables (variables with their data being given to them in functions preload/setup/draw)
 var screen;
 
@@ -18,10 +20,10 @@ var svmap0;
 
 function check_scene() {
     if(screenState === null) {
-        screenState = "side_view";
-        sessionStorage.setItem("screen_state", screenState);
+        screenState = "main_menu";
+        sessionStorage.setItem("scene_state", screenState);
     }else {
-        screenState = sessionStorage.getItem("screen_state");
+        screenState = sessionStorage.getItem("scene_state");
     }
 }
 
@@ -43,4 +45,16 @@ function draw() {
     if(screenState === "side_view") {
         sv_draw();
     }
+}
+
+function game_clear(sketch) {
+    //ONLY USE WHEN CHANGING SCENES
+    sketch.remove();
+}
+
+function gameSwitch(newScene){
+    sessionStorage.setItem("scene_state", newScene);
+    screenState = newScene;
+    clear = true;
+    setup();
 }
