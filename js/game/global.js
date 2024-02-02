@@ -10,6 +10,10 @@ var load_game;
 var credits;
 
 var svPlayer;
+var svTiles;
+var svTile1, svTile2;
+var svMap;
+var svmap0;
 //game functions
 
 function check_scene() {
