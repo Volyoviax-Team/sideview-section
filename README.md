@@ -4,6 +4,8 @@ how to commit from terminal
 - git commit -m "commit name"
 - git push -u origin main
 
+how to update local repo with remote-origin
+- git pull
 
 how to make a new branch
 - git checkout -b branch_name
